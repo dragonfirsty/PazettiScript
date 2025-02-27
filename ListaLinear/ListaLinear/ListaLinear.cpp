@@ -15,6 +15,7 @@ void progressaoAritmetica();
 void maiorNumero();
 void soma10numeros();
 void idades10();
+void explicacoes();
 //--------------------------
 
 
@@ -24,8 +25,8 @@ int main(){
 
 void menu(){
 
-	int op = 0;
-	while (op != 11) {
+	int escolhaMenu = 0;
+	while (escolhaMenu != 12) {
 		system("cls"); // somente no windows
 		cout << "Menu PazettiScript";
 		cout << endl << endl;
@@ -39,12 +40,13 @@ void menu(){
 		cout << "8 - Maior numero \n\n";
 		cout << "9 - Soma de 10 numeros \n\n";
 		cout << "10 - 10 idades \n\n";
-		cout << "11 - Sair \n\n";
+		cout << "11 - Explicacoes";
+		cout << "12 - Sair \n\n";
 
 		cout << "Opcao: ";
-		cin >> op;
+		cin >> escolhaMenu;
 
-		switch (op){
+		switch (escolhaMenu){
 		case 1: mediaAritmetica();
 			break;
 		case 2: custoDaMercadoria();
@@ -64,8 +66,10 @@ void menu(){
 		case 9: soma10numeros();
 			break;
 		case 10: idades10();
-			break;		
-		case 11:
+			break;
+		case 11: explicacoes();
+			break;			
+		case 12:
 			return;
 		default:
 			break;
@@ -73,6 +77,17 @@ void menu(){
 
 		system("pause"); // somente no windows
 	}
+}
+
+void explicacoes(){
+
+	int escolha = 0;
+
+	cout << "Qual desafio voce quer receber a explicacao?" << endl;
+
+
+
+
 }
 
 void mediaAritmetica(){
