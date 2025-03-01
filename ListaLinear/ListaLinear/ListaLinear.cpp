@@ -20,6 +20,8 @@ void explicacoes();
 
 
 int main(){
+
+	setlocale(LC_ALL, "pt_BR.UTF-8");
 	menu();
 }
 
@@ -35,13 +37,13 @@ void menu(){
 		cout << "3 - Equação do segundo grau \n";
 		cout << "4 - SSMD \n";
 		cout << "5 - Calcular a área de uma circunferência \n";
-		cout << "6 - Números naturais positivos ímpares \n\n";
-		cout << "7 - PA \n\n";
-		cout << "8 - Maior numero \n\n";
-		cout << "9 - Soma de 10 numeros \n\n";
-		cout << "10 - 10 idades \n\n";
-		cout << "11 - Explicacoes";
-		cout << "12 - Sair \n\n";
+		cout << "6 - Números naturais positivos ímpares \n";
+		cout << "7 - PA \n";
+		cout << "8 - Maior numero \n";
+		cout << "9 - Soma de 10 numeros \n";
+		cout << "10 - 10 idades \n";
+		cout << "11 - Explicacoes \n";
+		cout << "12 - Sair \n";
 
 		cout << "Opcao: ";
 		cin >> escolhaMenu;
@@ -84,6 +86,7 @@ void explicacoes(){
 	int escolha = 0;
 
 	cout << "Qual desafio voce quer receber a explicacao?" << endl;
+	
 
 
 
