@@ -41,7 +41,7 @@ void exibirArteAsciiComAnimacao() {
 	};
 	for (const std::string& linha : arteAscii) {
 		std::cout << linha << std::endl;
-		std::this_thread::sleep_for(std::chrono::milliseconds(200)); 
+		std::this_thread::sleep_for(std::chrono::milliseconds(50)); // Atraso de 100ms
 	}
 }
 
@@ -49,21 +49,19 @@ void exibirArteAsciiComAnimacao() {
 
 
 int main(){
-	exibirArteAsciiComAnimacao();
-	limparTela();
+	
 	setlocale(LC_ALL, "pt_BR.UTF-8");
 	menu();
+	
 }
 
 void menu(){
-	
 
 	int escolhaMenu = 0;
 	while (escolhaMenu != 12) {
 
 		system("cls"); // somente no windows
-		cout << "Menu PazettiScript";
-		cout << endl << endl;
+	exibirArteAsciiComAnimacao();
 		cout << "1 - Média aritmética \n";
 		cout << "2 - custo de mercadoria \n";
 		cout << "3 - Equação do segundo grau \n";
@@ -110,6 +108,7 @@ void menu(){
 		}
 
 		system("pause"); // somente no windows
+		limparTela();
 	}
 }
 
